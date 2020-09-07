@@ -50,7 +50,8 @@ namespace NotaAluno
                 Console.WriteLine(aluno.name+" foi aprovado, nota: " + final);
             }
             else {
-                Console.WriteLine(aluno.name+" foi reprovado, nota: "+final);
+                double faltou = aluno.reprovado();
+                Console.WriteLine(aluno.name+" foi reprovado, nota: "+final+" faltou: "+faltou+" pontos");
             }
             Console.ReadKey();
         }
